@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @font-face {
+        font-family: 'mojangles'; /* Name of the font */
+        src: url('fonts/mojangles-bold.ttf') format('truetype'); /* Path to the .ttf file */
+    }
+    font-family: 'mojangles', monospace;
+}
+
+body {
+    color: #ccdabd;
+    line-height: 1.6;
+    background-color: #191719;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #191C23;
+    display: flex;                    
+    justify-content: space-between;      
+    align-items: center;   
+    padding: 10px 20px;
+    position:static;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1.8px solid rgb(66, 65, 68);
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    border-top: 1.8px solid rgb(66, 65, 68);
+    background-color: #191C23;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#features .features-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.home-button {
+    background-color: #333;           
+    color: #fff;                     
+    padding: 10px 20px;               
+    text-decoration: none;            
+    border-radius: 5px;               
+    font-size: 16px;                  
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+
+.home-button:hover {
+    background-color: #3db487;           
+}
+
+
+/* Hero Section */
+#home {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 5px;
+}
+
+#home h1 {
+    font-size: 4em;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#links {
+    margin-top: 5px;
+}
+
+
+.logo-container {
+    display: flex;                    
+    align-items: center;    
+    text-decoration: none;
+    color: inherit;          
+}
+
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-left: 22px;              
+}
+
+
+
+.logo-text {
+    font-size: 18px;                  
+    font-weight: bold;                
+    margin-left: 8px; 
+}
+
+.my-image {
+    width: 100%;
+    height: auto;  
+}
+
+
+
+.image-button {
+    display: inline-block;     
+    background-color: #1d212b;  
+    width: 75px;                 
+    height: 75px;                
+    border-radius: 10px;         
+    overflow: hidden;            
+    border: 1px solid #333;      
+    text-decoration: none;       
+}
+
+/* Style the image inside the button */
+.image-button img {
+    width: 95%;                 
+    height: 95%;                
+    object-fit: cover;           
+}
+
+.image-button:hover {
+    border-color: #22ff85; 
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+}
+
+
+/* Index.html
+
+<a href="https://github.com/xenia-canary/xenia-canary" class="image-button">
+    <img src="xenia.png" alt="Icon Image">
+</a>
+<a class="image-button">
+    <img src="pc2.png" alt="Icon Image">
+</a>
+
+<a href="https://www.tiktok.com/@legacyrewritten" class="image-button">
+    <img src="images/tiktok.png" alt="Icon Image">
+</a>
